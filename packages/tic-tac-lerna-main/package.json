@@ -9,6 +9,7 @@
   "author": "Carles Capellas <capellas.carles@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "tic-tac-lerna-grid": "1.0.0"
   }
 }
