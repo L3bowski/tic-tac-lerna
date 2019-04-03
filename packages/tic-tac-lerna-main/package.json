@@ -1,0 +1,14 @@
+{
+  "name": "tic-tac-lerna-main",
+  "version": "1.0.0",
+  "description": "Main package of the tic-tac-lerna project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Carles Capellas <capellas.carles@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
