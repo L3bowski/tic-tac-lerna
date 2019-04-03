@@ -16,5 +16,8 @@
     "packages"
   ],
   "author": "Carles Capellas <capellas.carles@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  }
 }
