@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-lerna-main",
   "version": "0.1.1",
-  "description": "Main package of the tic-tac-lerna project",
+  "description": "tic-tac-lerna express application",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {

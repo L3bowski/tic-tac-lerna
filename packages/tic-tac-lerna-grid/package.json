@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-lerna-grid",
   "version": "0.1.1",
-  "description": "Tic-tac-lerna grids management",
+  "description": "tic-tac-lerna grids management",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
