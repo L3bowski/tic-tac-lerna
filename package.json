@@ -1,14 +1,14 @@
 {
   "name": "tic-tac-lerna",
-  "version": "0.0.1",
-  "description": "Prove of concept on how to use lerna to manage multi-packages projects",
+  "version": "0.1.0",
+  "description": "Prove of concept on how to use Lerna to manage multi-package Typescript projects",
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
     "prepare": "lerna bootstrap && npm run build",
     "publish": "lerna publish",
-    "reset": "lerna clean -y && rm -rf node_modules/",
-    "start": "cd packages/tic-tac-lerna-main && npm start"
+    "clean:lib": "rm packages/**/lib -rf",
+    "reset": "lerna clean -y && rm -rf node_modules/"
   },
   "keywords": [
     "lernajs",
