@@ -6,4 +6,4 @@ Since the packages are written in Typescript, we will need to compile them every
 
 If we want to make a clean install `lerna clean` will remove the node_modules folder from all the packages along with the symlinks. We also remove the root folder node_modules in the `reset` script.
 
-Finally, we also use Lerna to individually publish the packages to npm
+Finally, we also use Lerna to individually publish the packages to npm. Every time we make changes in a package and only after having committed the changes in the git repository, we will run `lerna publish`, which will build and analyze the packages, and publish them to npm if there are changes. We will be prompted for the version increase before publishing (e.g. patch, minor, etc.)
