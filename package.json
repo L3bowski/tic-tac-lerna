@@ -1,11 +1,12 @@
 {
   "name": "tic-tac-lerna",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Prove of concept on how to use lerna to manage multi-packages projects",
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
     "prepare": "lerna bootstrap && npm run build",
+    "publish": "npm run prepare && lerna publish",
     "reset": "lerna clean -y && rm -rf node_modules/",
     "start": "cd packages/tic-tac-lerna-main && npm start"
   },
