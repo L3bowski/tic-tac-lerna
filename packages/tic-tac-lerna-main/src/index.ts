@@ -1,11 +1,11 @@
 import express from 'express';
 import { getGrids } from 'tic-tac-lerna-grid';
 
-const startServer = () => {
+const startServer = (publicFolderPath: string) => {
     const port = 5000;
     const server = express();
 
-    server.use(express.static('public'));
+    server.use(express.static(publicFolderPath));
 
     server.use(/^\/grids$/, (req, res, next) => {
         return res.send(JSON.stringify(getGrids()));

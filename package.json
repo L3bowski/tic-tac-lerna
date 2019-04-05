@@ -7,7 +7,8 @@
     "prepare": "lerna bootstrap && npm run build",
     "publish": "lerna publish",
     "clean:dist": "rm packages/**/dist -rf",
-    "reset": "lerna clean -y && rm -rf node_modules/"
+    "reset": "lerna clean -y && rm -rf node_modules/",
+    "start": "cd packages/tic-tac-lerna && npm start"
   },
   "keywords": [
     "lernajs",

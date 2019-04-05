@@ -1,0 +1,30 @@
+{
+  "name": "tic-tac-lerna",
+  "version": "0.1.1",
+  "description": "tic-tac-lerna-main package usage example",
+  "author": "Carles Capellas <capellas.carles@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/L3bowski/tic-tac-lerna"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "tic-tac-lerna-main": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.0",
+    "typescript": "^3.4.1"
+  }
+}
