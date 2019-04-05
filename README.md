@@ -7,3 +7,13 @@ Since the packages are written in Typescript, we will need to compile them every
 If we want to make a clean install `lerna clean` will remove the node_modules folder from all the packages along with the symlinks. We also remove the root folder node_modules in the `reset` script.
 
 Finally, we also use Lerna to individually publish the packages to npm. Every time we make changes in a package and only after having committed the changes in the git repository, we will run `lerna publish`, which will build and analyze the packages, and publish them to npm if there are changes. We will be prompted for the version increase before publishing (e.g. patch, minor, etc.)
+
+### Add new package
+
+Lerna provides a command line option to add a new package: `lerna create <package-name>`. It creates a new npm package and fills some of the package.json fields with available project information (e.g. the git repository, version, author, etc.). We could do it manually, but is a nice way to get uniform package.json files.
+
+Be aware that Lerna is expecting Javascript files instead of Typescript; by default the main property of the package.json will be 'lib/<package-name>.js'
+
+### File structure
+
+By default Lerna will search for the dependencies source code in each package `lib` folder. We can change this folder through the `files` property of the package.json. In this project we use `dist` instead of `lib`, since would be confusing to have the compiled files in a `lib` folder.

@@ -2,11 +2,14 @@
   "name": "tic-tac-lerna-grid",
   "version": "0.1.1",
   "description": "tic-tac-lerna grids management",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf lib && tsc && node dts-generator.config.js"
+    "build": "rm -rf dist && tsc && node dts-generator.config.js"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Carles Capellas <capellas.carles@gmail.com>",
   "license": "ISC",
   "devDependencies": {

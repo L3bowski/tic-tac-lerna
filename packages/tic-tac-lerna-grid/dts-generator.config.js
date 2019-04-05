@@ -1,6 +1,6 @@
 require('dts-generator').default({
     project: './',
-    out: './lib/index.d.ts',
+    out: './dist/index.d.ts',
     resolveModuleId: (params) => {
  		if (params.currentModuleId === 'index') {
 			return 'tic-tac-lerna-grid';
