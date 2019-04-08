@@ -8,6 +8,8 @@ If we want to make a clean install `lerna clean` will remove the node_modules fo
 
 Finally, we also use Lerna to individually publish the packages to npm. Every time we make changes in a package and only after having committed the changes in the git repository, we will run `lerna publish`, which will build and analyze the packages, and publish them to npm if there are changes. We will be prompted for the version increase before publishing (e.g. patch, minor, etc.)
 
+*Note that the root folder package.json `version` is irrelevant, since this module does not contain any code and neither will be published to npm*
+
 ### Add new package
 
 Lerna provides a command line option to add a new package: `lerna create <package-name>`. It creates a new npm package and fills some of the package.json fields with available project information (e.g. the git repository, version, author, etc.). We could do it manually, but is a nice way to get uniform package.json files.
