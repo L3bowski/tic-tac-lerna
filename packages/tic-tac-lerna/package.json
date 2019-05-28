@@ -1,6 +1,6 @@
 {
   "name": "tic-tac-lerna",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "tic-tac-lerna-main package usage example",
   "author": "Carles Capellas <capellas.carles@gmail.com>",
   "homepage": "",
@@ -21,7 +21,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "tic-tac-lerna-main": "^0.2.0"
+    "tic-tac-lerna-main": "^0.2.1"
   },
   "devDependencies": {
     "@types/node": "^11.13.0",
